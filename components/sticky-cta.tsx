@@ -21,7 +21,7 @@ export function StickyCta({ lang }: { lang: Lang }) {
   }, []);
   const show = pastHero && !blocked;
   return (
-    <div id="sticky-cta" data-visible={show} inert={!show} className={`fixed inset-x-0 bottom-0 z-40 border-t border-border bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-10px_30px_rgba(11,31,28,0.12)] backdrop-blur transition-transform duration-300 md:hidden ${show ? "translate-y-0" : "translate-y-full"}`}>
+    <div id="sticky-cta" data-visible={show} inert={!show} className={`fixed inset-x-0 bottom-0 z-40 border-t border-border bg-surface/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] backdrop-blur transition-transform duration-300 md:hidden ${show ? "translate-y-0" : "translate-y-full"}`}>
       <div className="mx-auto flex max-w-md items-center justify-between gap-3">
         <p className="text-sm leading-tight text-ink-soft">{t.from} <strong className="text-lg text-header">£15</strong><span className="block text-xs">{t.per}</span></p>
         <div className="flex gap-2"><Link href={sectionHref(lang, "trial")} className="btn btn-ghost !px-4 !py-2.5">{t.trial}</Link><Link href={sectionHref(lang, "plans")} className="btn btn-primary !px-5 !py-2.5">{t.plans}</Link></div>

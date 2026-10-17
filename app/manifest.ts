@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "IPTV Polska for UK households: Polish live TV and on-demand programmes over your broadband, from £15 a month.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f6f7fb",
-    theme_color: "#0a1633",
+    background_color: "#08070f",
+    theme_color: "#08070f",
     lang: "en-GB",
   };
 }

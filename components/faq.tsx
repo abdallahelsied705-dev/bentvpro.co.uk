@@ -33,15 +33,15 @@ export function Faq({ lang }: { lang: Lang }) {
   return (
     <Section id="faq" tone="muted">
       <SectionHeading eyebrow={t.eyebrow} title={t.title} />
-      <div className="mx-auto max-w-3xl space-y-3">
+      <div data-stagger className="mx-auto max-w-3xl space-y-3">
         {t.items.map((item) => (
-          <details key={item.q} className={`${card} group open:border-brand/40`}>
-            <summary className="flex cursor-pointer items-center justify-between gap-4 p-5 font-bold text-header"><span>{item.q}</span><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-background text-brand"><Plus size={18} className="faq-icon transition-transform" aria-hidden="true" /></span></summary>
-            <div className="px-5 pb-5 leading-relaxed text-ink-soft"><p>{item.a}</p>{item.link && (<p className="mt-3"><Link href={item.link.href} className="font-bold text-brand underline underline-offset-2">{item.link.label}</Link></p>)}</div>
+          <details key={item.q} className={`${card} group transition-colors`}>
+            <summary className="flex cursor-pointer items-center justify-between gap-4 p-5 font-bold text-header"><span>{item.q}</span><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-surface2 text-accent transition-colors group-open:bg-grad group-open:text-white"><Plus size={18} className="faq-icon transition-transform" aria-hidden="true" /></span></summary>
+            <div className="px-5 pb-5 leading-relaxed text-ink-soft"><p>{item.a}</p>{item.link && (<p className="mt-3"><Link href={item.link.href} className="font-bold text-accent underline underline-offset-2">{item.link.label}</Link></p>)}</div>
           </details>
         ))}
       </div>
-      <div className="mx-auto mt-10 max-w-3xl text-center"><p className="text-ink-soft">{t.more}</p><a href={whatsappLink(t.msg)} target="_blank" rel="noopener noreferrer" className="btn btn-teal mt-5">{t.ask}</a></div>
+      <div data-reveal className="mx-auto mt-10 max-w-3xl text-center"><p className="text-ink-soft">{t.more}</p><a href={whatsappLink(t.msg)} target="_blank" rel="noopener noreferrer" className="btn btn-teal mt-5">{t.ask}</a></div>
       <JsonLd data={jsonLd} />
     </Section>
   );

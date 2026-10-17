@@ -12,7 +12,7 @@ const copy = {
 } as const;
 
 type Status = "idle" | "sending" | "sent" | "whatsapp" | "error";
-const input = "w-full rounded-lg border border-border bg-white px-4 py-3 text-header placeholder:text-ink-soft/60 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/25";
+const input = "w-full rounded-xl border border-border bg-background px-4 py-3 text-header placeholder:text-ink-soft/60 transition focus:border-accent focus:outline-none focus:ring-4 focus:ring-accent/15";
 
 export function TrialForm({ lang }: { lang: Lang }) {
   const t = copy[lang];
@@ -34,14 +34,14 @@ export function TrialForm({ lang }: { lang: Lang }) {
     } catch { setStatus("error"); }
   }
 
-  if (status === "sent") return (<div role="status" className="rounded-xl border border-emerald-300 bg-emerald-50 p-8 text-center"><p className="font-display text-xl font-bold text-header">{t.okTitle}</p><p className="mt-2 text-ink-soft">{t.okText} <strong className="text-header">{email}</strong>. {t.okHint}</p></div>);
-  if (status === "whatsapp" || status === "error") return (<div role="status" className="rounded-xl border border-border bg-background p-8 text-center"><p className="font-display text-xl font-bold text-header">{status === "error" ? t.errTitle : t.waTitle}</p><p className="mt-2 text-ink-soft">{t.waText}</p><a href={whatsappLink(t.waMsg(device, email))} target="_blank" rel="noopener noreferrer" className="btn btn-teal mt-6"><MessageCircle size={18} aria-hidden="true" /> {t.wa}</a></div>);
+  if (status === "sent") return (<div role="status" className="rounded-xl border border-emerald-500/40 bg-emerald-500/10 p-8 text-center"><p className="font-display text-xl font-bold text-header">{t.okTitle}</p><p className="mt-2 text-ink-soft">{t.okText} <strong className="text-header">{email}</strong>. {t.okHint}</p></div>);
+  if (status === "whatsapp" || status === "error") return (<div role="status" className="rounded-xl border border-border bg-surface2 p-8 text-center"><p className="font-display text-xl font-bold text-header">{status === "error" ? t.errTitle : t.waTitle}</p><p className="mt-2 text-ink-soft">{t.waText}</p><a href={whatsappLink(t.waMsg(device, email))} target="_blank" rel="noopener noreferrer" className="btn btn-teal mt-6"><MessageCircle size={18} aria-hidden="true" /> {t.wa}</a></div>);
   return (
     <form onSubmit={onSubmit} className="space-y-4">
       <div><label htmlFor="trial-email" className="mb-1.5 block text-sm font-bold text-header">{t.email}</label><input id="trial-email" type="email" required autoComplete="email" maxLength={254} placeholder="name@example.co.uk" value={email} onChange={(e) => setEmail(e.target.value)} className={input} /></div>
       <div><label htmlFor="trial-device" className="mb-1.5 block text-sm font-bold text-header">{t.device}</label><select id="trial-device" value={device} onChange={(e) => setDevice(e.target.value)} className={`${input} appearance-none`}>{t.devices.map((d) => (<option key={d} value={d}>{d}</option>))}</select></div>
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden"><label>Do not fill this field<input tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} /></label></div>
-      <label className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-ink-soft"><input type="checkbox" required checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1 h-4 w-4 shrink-0 accent-[#c8102e]" /><span>{t.consent1} {SITE.name}, {SITE.email}. {t.consent2}{" "}<Link href={path(lang, "privacy")} className="font-bold text-brand underline underline-offset-2">{t.privacy}</Link>.</span></label>
+      <label className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-ink-soft"><input type="checkbox" required checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1 h-4 w-4 shrink-0 accent-[#e11d48]" /><span>{t.consent1} {SITE.name}, {SITE.email}. {t.consent2}{" "}<Link href={path(lang, "privacy")} className="font-bold text-accent underline underline-offset-2">{t.privacy}</Link>.</span></label>
       <button type="submit" disabled={status === "sending"} className="btn btn-primary w-full !py-4 disabled:opacity-70">{status === "sending" ? (<><Loader2 size={18} className="animate-spin" aria-hidden="true" /> {t.sending}</>) : t.submit}</button>
     </form>
   );

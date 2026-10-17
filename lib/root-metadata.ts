@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { locales, type Lang } from "@/lib/i18n";
 import { SITE } from "@/lib/site";
 
-export const rootViewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0a1633" };
+export const rootViewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#08070f" };
 
 export function rootMetadata(lang: Lang): Metadata {
   return {

@@ -14,7 +14,7 @@ export function LatestPosts({ lang }: { lang: Lang }) {
   return (
     <Section tone="muted">
       <SectionHeading eyebrow={t.eyebrow} title={t.title} sub={t.sub} />
-      <div className="grid gap-5 md:grid-cols-3">{posts.map((p) => (<PostCard key={p.slug} post={p} />))}</div>
+      <div data-stagger className="grid gap-5 md:grid-cols-3">{posts.map((p) => (<PostCard key={p.slug} post={p} />))}</div>
       <div className="mt-10 text-center"><Link href={path(lang, "blog")} className="btn btn-ghost">{t.all}</Link></div>
     </Section>
   );

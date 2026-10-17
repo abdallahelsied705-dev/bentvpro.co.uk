@@ -18,11 +18,11 @@ export function VsCable({ lang }: { lang: Lang }) {
   return (
     <Section>
       <SectionHeading eyebrow={t.eyebrow} title={t.title} sub={t.sub} />
-      <div className={`${card} mx-auto max-w-5xl overflow-x-auto`}>
+      <div data-reveal className={`${card} mx-auto max-w-5xl overflow-x-auto`}>
         <table className="w-full min-w-[38rem] border-collapse text-left">
           <caption className="sr-only">{t.caption}</caption>
-          <thead><tr className="bg-background text-xs uppercase tracking-wider"><th scope="col" className="px-5 py-4"><span className="sr-only">Topic</span></th><th scope="col" className="px-5 py-4 font-extrabold text-brand">{t.cols[1]}</th><th scope="col" className="px-5 py-4 font-bold text-ink-soft">{t.cols[2]}</th></tr></thead>
-          <tbody>{t.rows.map(([label, a, b]) => (<tr key={label} className="border-t border-border align-top"><th scope="row" className="whitespace-nowrap px-5 py-4 font-bold text-header">{label}</th><td className="px-5 py-4 text-header"><span className="flex items-start gap-2.5"><Check size={18} className="mt-0.5 shrink-0 text-emerald-600" aria-hidden="true" />{a}</span></td><td className="px-5 py-4 text-ink-soft"><span className="flex items-start gap-2.5"><Minus size={18} className="mt-0.5 shrink-0 text-ink-soft/60" aria-hidden="true" />{b}</span></td></tr>))}</tbody>
+          <thead><tr className="bg-surface2 text-xs uppercase tracking-wider"><th scope="col" className="px-5 py-4"><span className="sr-only">Topic</span></th><th scope="col" className="px-5 py-4 font-extrabold text-accent">{t.cols[1]}</th><th scope="col" className="px-5 py-4 font-bold text-ink-soft">{t.cols[2]}</th></tr></thead>
+          <tbody data-stagger>{t.rows.map(([label, a, b]) => (<tr key={label} className="border-t border-border align-top"><th scope="row" className="whitespace-nowrap px-5 py-4 font-bold text-header">{label}</th><td className="px-5 py-4 text-header"><span className="flex items-start gap-2.5"><Check size={18} className="mt-0.5 shrink-0 text-emerald-400" aria-hidden="true" />{a}</span></td><td className="px-5 py-4 text-ink-soft"><span className="flex items-start gap-2.5"><Minus size={18} className="mt-0.5 shrink-0 text-ink-soft/60" aria-hidden="true" />{b}</span></td></tr>))}</tbody>
         </table>
       </div>
       <p className="mx-auto mt-4 max-w-5xl text-center text-xs text-ink-soft">{t.note}</p>

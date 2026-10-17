@@ -20,19 +20,19 @@ export function Intro({ lang }: { lang: Lang }) {
   return (
     <Section>
       <div className="grid gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-7">
+        <div data-reveal="left" className="lg:col-span-7">
           <p className="eyebrow">{t.eyebrow}</p>
-          <h2 className="font-display mt-4 text-3xl font-bold leading-tight text-header md:text-[2.65rem]">{t.title}</h2>
+          <h2 className="font-display mt-4 text-3xl font-bold leading-tight text-header md:text-5xl">{t.title}</h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-soft">{t.p1}</p>
           <p className="mt-4 text-lg leading-relaxed text-ink-soft"><strong className="text-header">IPTV UK</strong> {t.p2}</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href={sectionHref(lang, "plans")} className="btn btn-primary">{t.plans}</Link>
-            <Link href={blogPath(lang, t.slug)} className="font-bold text-brand underline underline-offset-4 hover:text-brand-dark">{t.read}</Link>
+            <Link href={blogPath(lang, t.slug)} className="font-bold text-accent underline underline-offset-4 hover:text-white">{t.read}</Link>
           </div>
         </div>
-        <aside className={`${card} p-7 lg:col-span-5`} aria-label={t.specTitle}>
+        <aside data-reveal="right" className={`${card} glow-border p-7 lg:col-span-5`} aria-label={t.specTitle}>
           <h3 className="font-display text-xl font-bold text-header">{t.specTitle}</h3>
-          <dl className="mt-4 divide-y divide-border">{t.spec.map(([k, v]) => (<div key={k} className="grid grid-cols-[6.5rem_1fr] gap-3 py-3 text-sm"><dt className="font-bold uppercase tracking-wider text-brand">{k}</dt><dd className="text-header">{v}</dd></div>))}</dl>
+          <dl data-stagger className="mt-4 divide-y divide-border">{t.spec.map(([k, v]) => (<div key={k} className="grid grid-cols-[6.5rem_1fr] gap-3 py-3 text-sm"><dt className="font-bold uppercase tracking-wider text-accent">{k}</dt><dd className="text-header">{v}</dd></div>))}</dl>
         </aside>
       </div>
     </Section>

@@ -11,8 +11,8 @@ const copy = {
 export function Footer({ lang }: { lang: Lang }) {
   const t = copy[lang];
   return (
-    <footer className="band-dark on-dark">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4">
+    <footer className="band-dark on-dark border-t border-border">
+      <div data-stagger className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-4">
         <div><Link href={path(lang, "home")} aria-label={SITE.name}><Logo onDark /></Link><p className="mt-4 text-sm leading-relaxed text-white/75">{t.blurb}</p></div>
         <nav aria-label={t.service}><h2 className="mb-3 text-sm font-extrabold uppercase tracking-wider text-white">{t.service}</h2><ul className="space-y-2 text-sm text-white/75">{t.links.map(([key, label]) => (<li key={key}><Link href={path(lang, key as RouteKey)} className="hover:text-white">{label}</Link></li>))}<li><Link href={sectionHref(lang, "plans")} className="hover:text-white">{t.plans}</Link></li><li><Link href={sectionHref(lang, "trial")} className="hover:text-white">{t.trial}</Link></li></ul></nav>
         <nav aria-label={t.info}><h2 className="mb-3 text-sm font-extrabold uppercase tracking-wider text-white">{t.info}</h2><ul className="space-y-2 text-sm text-white/75">{t.legal.map(([key, label]) => (<li key={key}><Link href={path(lang, key as RouteKey)} className="hover:text-white">{label}</Link></li>))}</ul></nav>

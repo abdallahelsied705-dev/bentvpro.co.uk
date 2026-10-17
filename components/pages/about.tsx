@@ -24,7 +24,7 @@ export function AboutPage({ lang }: { lang: Lang }) {
       <JsonLd data={webPageLd({ lang, path: p, name: t.title, description: t.description, type: "AboutPage" })} />
       <Section>
         <SectionHeading as="h1" eyebrow={t.eyebrow} title={t.h1} sub={t.lead} />
-        <div className="mx-auto grid max-w-4xl gap-4 md:grid-cols-3">{t.blocks.map(([h, d]) => (<div key={h} className={`${card} p-7`}><h2 className="font-display text-lg font-bold text-header">{h}</h2><p className="mt-3 text-sm leading-relaxed text-ink-soft">{d}</p></div>))}</div>
+        <div data-stagger className="mx-auto grid max-w-4xl gap-4 md:grid-cols-3">{t.blocks.map(([h, d]) => (<div key={h} className={`${card} p-7`}><h2 className="font-display text-lg font-bold text-header">{h}</h2><p className="mt-3 text-sm leading-relaxed text-ink-soft">{d}</p></div>))}</div>
         <div className="mt-10 flex flex-wrap justify-center gap-3"><Link href={path(lang, "guide")} className="btn btn-ghost">{t.links[0]}</Link><Link href={sectionHref(lang, "plans")} className="btn btn-primary">{t.links[1]}</Link><Link href={path(lang, "copyright")} className="btn btn-ghost">{t.links[2]}</Link></div>
       </Section>
     </>

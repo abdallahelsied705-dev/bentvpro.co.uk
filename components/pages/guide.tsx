@@ -12,7 +12,7 @@ import { whatsappLink } from "@/lib/site";
 export const guideMetadata = (lang: Lang): Metadata => pageMetadata({ lang, title: GUIDE_TEXT[lang].title, description: GUIDE_TEXT[lang].description, paths: { ...ROUTES.guide } });
 
 function Steps({ steps }: { steps: string[] }) {
-  return <ol className="list-decimal space-y-1.5 pl-6 leading-relaxed text-header marker:font-bold marker:text-brand">{steps.map((s) => (<li key={s}>{s}</li>))}</ol>;
+  return <ol className="list-decimal space-y-1.5 pl-6 leading-relaxed text-header marker:font-bold marker:text-accent">{steps.map((s) => (<li key={s}>{s}</li>))}</ol>;
 }
 
 export function GuidePage({ lang }: { lang: Lang }) {
@@ -24,14 +24,14 @@ export function GuidePage({ lang }: { lang: Lang }) {
       <JsonLd data={[webPageLd({ lang, path: p, name: g.title, description: g.description }), ...howTo]} />
       <Section>
         <SectionHeading as="h1" eyebrow={g.eyebrow} title={g.h1} sub={g.intro} />
-        <nav aria-label={g.h1} className="mx-auto mb-10 flex max-w-4xl flex-wrap justify-center gap-2">{sections.map((s) => (<a key={s.id} href={`#${s.id}`} className="rounded-full border border-border bg-white px-4 py-1.5 text-sm font-semibold text-header hover:border-brand hover:text-brand">{s.title}</a>))}</nav>
-        <div className="mx-auto max-w-3xl space-y-5">
+        <nav aria-label={g.h1} className="mx-auto mb-10 flex max-w-4xl flex-wrap justify-center gap-2">{sections.map((s) => (<a key={s.id} href={`#${s.id}`} className="rounded-full border border-border bg-surface px-4 py-1.5 text-sm font-semibold text-header transition-colors hover:border-accent hover:text-accent">{s.title}</a>))}</nav>
+        <div data-stagger className="mx-auto max-w-3xl space-y-5">
           {sections.map((s, i) => (
             <article key={s.id} id={s.id} className={`${card} scroll-mt-28 p-6 md:p-8`}>
-              <h2 className="font-display text-xl font-bold text-header md:text-2xl"><span className="text-brand">{String(i + 1).padStart(2, "0")}</span> {s.title}</h2>
+              <h2 className="font-display text-xl font-bold text-header md:text-2xl"><span className="text-accent">{String(i + 1).padStart(2, "0")}</span> {s.title}</h2>
               <div className="mt-4"><Steps steps={s.steps} /></div>
-              {s.note && (<p className="mt-4 rounded-lg bg-background p-3 text-sm text-header"><strong>{g.note}:</strong> {s.note}</p>)}
-              {s.link && (<a href={s.link.href} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-bold text-brand underline underline-offset-2">{s.link.label}</a>)}
+              {s.note && (<p className="mt-4 rounded-lg bg-surface2 p-3 text-sm text-header"><strong>{g.note}:</strong> {s.note}</p>)}
+              {s.link && (<a href={s.link.href} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-bold text-accent underline underline-offset-2">{s.link.label}</a>)}
             </article>
           ))}
         </div>

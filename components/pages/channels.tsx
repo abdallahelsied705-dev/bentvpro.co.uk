@@ -22,10 +22,10 @@ export function ChannelsPage({ lang }: { lang: Lang }) {
       <JsonLd data={webPageLd({ lang, path: p, name: t.title, description: t.description, type: "CollectionPage" })} />
       <Section>
         <SectionHeading as="h1" eyebrow={t.eyebrow} title={t.h1} sub={t.sub} />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {cats.map(({ icon: Icon, title, text }) => (
             <div key={title} className={`${card} ${cardHover} p-7`}>
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-background text-brand"><Icon size={24} strokeWidth={1.8} aria-hidden="true" /></span>
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-grad text-white"><Icon size={24} strokeWidth={1.8} aria-hidden="true" /></span>
               <h2 className="font-display mt-4 text-lg font-bold text-header">{title}</h2>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{text}</p>
             </div>

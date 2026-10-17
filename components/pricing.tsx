@@ -14,15 +14,15 @@ export function Pricing({ lang }: { lang: Lang }) {
     <Section id="plans">
       <SectionHeading eyebrow={t.eyebrow} title={t.title} sub={t.sub} />
       <PricingPlans lang={lang} />
-      <ul className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">{t.trust.map(({ icon: Icon, text }) => (<li key={text} className={`${card} flex items-center gap-3 px-4 py-3 text-sm font-semibold text-header`}><Icon size={18} className="shrink-0 text-brand" aria-hidden="true" />{text}</li>))}</ul>
-      <div className={`${card} mt-6 p-8 md:p-10`}>
+      <ul data-stagger className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">{t.trust.map(({ icon: Icon, text }) => (<li key={text} className={`${card} flex items-center gap-3 px-4 py-3 text-sm font-semibold text-header`}><Icon size={18} className="shrink-0 text-accent" aria-hidden="true" />{text}</li>))}</ul>
+      <div data-reveal className={`${card} mt-6 p-8 md:p-10`}>
         <div className="grid gap-8 lg:grid-cols-12">
           <div className="lg:col-span-4"><p className="eyebrow">{t.incEyebrow}</p><h3 className="font-display mt-4 text-2xl font-bold text-header">{t.incTitle}</h3><p className="mt-3 text-sm leading-relaxed text-ink-soft">{t.incText}</p></div>
-          <ul className="grid gap-x-8 gap-y-3.5 sm:grid-cols-2 lg:col-span-8">{t.features.map((f) => (<li key={f} className="flex items-start gap-3 text-[0.95rem] text-header"><span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand text-white"><Check size={13} strokeWidth={3.5} aria-hidden="true" /></span><span>{f}</span></li>))}</ul>
+          <ul data-stagger className="grid gap-x-8 gap-y-3.5 sm:grid-cols-2 lg:col-span-8">{t.features.map((f) => (<li key={f} className="flex items-start gap-3 text-[0.95rem] text-header"><span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-grad text-white"><Check size={13} strokeWidth={3.5} aria-hidden="true" /></span><span>{f}</span></li>))}</ul>
         </div>
       </div>
-      <div className="mt-6 flex flex-col items-start gap-5 rounded-2xl border border-border bg-white p-6 md:flex-row md:items-center md:justify-between md:p-8">
-        <div className="flex gap-4"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-background text-brand"><ShieldCheck size={24} strokeWidth={1.8} aria-hidden="true" /></span><p className="text-sm leading-relaxed text-header">{t.note}</p></div>
+      <div data-reveal className="card mt-6 flex flex-col items-start gap-5 p-6 md:flex-row md:items-center md:justify-between md:p-8">
+        <div className="flex gap-4"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-surface2 text-accent"><ShieldCheck size={24} strokeWidth={1.8} aria-hidden="true" /></span><p className="text-sm leading-relaxed text-header">{t.note}</p></div>
         <a href={whatsappLink(t.noteMsg)} target="_blank" rel="noopener noreferrer" className="btn btn-teal shrink-0">{t.noteCta}</a>
       </div>
     </Section>

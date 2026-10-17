@@ -8,11 +8,11 @@ export function Breadcrumbs({ lang, trail }: { lang: Lang; trail: { name: string
   const full = [{ name: "Home", path: path(lang, "home") }, ...trail];
   return (
     <>
-      <nav aria-label="Breadcrumb" className="border-b border-border bg-white/70">
+      <nav aria-label="Breadcrumb" className="border-b border-border bg-surface/60">
         <ol className="mx-auto flex max-w-6xl flex-wrap items-center gap-1.5 px-4 py-2.5 text-sm">
           {full.map((item, i) => { const last = i === full.length - 1; return (
             <li key={item.path} className="flex items-center gap-1.5">
-              {last ? <span aria-current="page" className="font-semibold text-header">{item.name}</span> : (<><Link href={item.path} className="text-brand hover:underline">{item.name}</Link><span aria-hidden="true" className="text-ink-soft/50">/</span></>)}
+              {last ? <span aria-current="page" className="font-semibold text-header">{item.name}</span> : (<><Link href={item.path} className="text-accent hover:underline">{item.name}</Link><span aria-hidden="true" className="text-ink-soft/50">/</span></>)}
             </li>
           ); })}
         </ol>

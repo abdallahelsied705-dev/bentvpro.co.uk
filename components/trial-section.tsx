@@ -10,13 +10,13 @@ export function TrialSection({ lang }: { lang: Lang }) {
   return (
     <Section id="trial" tone="dark">
       <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-        <div>
+        <div data-reveal="left">
           <p className="eyebrow">{t.eyebrow}</p>
-          <h2 className="font-display mt-4 text-3xl font-bold leading-tight text-white md:text-[2.65rem]">{t.title}</h2>
+          <h2 className="font-display mt-4 text-3xl font-bold leading-tight text-white md:text-5xl">{t.title}</h2>
           <p className="mt-5 text-lg leading-relaxed text-white/85">{t.text}</p>
-          <ul className="mt-8 space-y-3">{t.points.map((p) => (<li key={p} className="flex items-start gap-3 text-white"><span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent text-[#1c0509]"><Check size={14} strokeWidth={3.5} aria-hidden="true" /></span>{p}</li>))}</ul>
+          <ul data-stagger className="mt-8 space-y-3">{t.points.map((p) => (<li key={p} className="flex items-start gap-3 text-white"><span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-grad text-white"><Check size={14} strokeWidth={3.5} aria-hidden="true" /></span>{p}</li>))}</ul>
         </div>
-        <div className="rounded-2xl bg-white p-6 shadow-2xl shadow-black/30 md:p-8"><TrialForm lang={lang} /></div>
+        <div data-reveal="right" className="card glow-border p-6 md:p-8"><TrialForm lang={lang} /></div>
       </div>
     </Section>
   );

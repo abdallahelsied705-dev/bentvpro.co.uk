@@ -22,14 +22,14 @@ export function Header({ lang }: { lang: Lang }) {
   const isActive = (href: string) => (href === "/" ? pathname === href : pathname.startsWith(href));
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
+    <header className="site-header sticky top-0 z-40 border-b border-border/60 bg-background/70 backdrop-blur-xl transition-[background-color,box-shadow] duration-300">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link href={path(lang, "home")} aria-label={t.home} onClick={() => setOpen(false)}><Logo /></Link>
         <nav aria-label={t.main} className="hidden items-center gap-7 lg:flex">
           {NAV[lang].map((item) => { const href = path(lang, item.key); const active = isActive(href); return (
-            <Link key={item.key} href={href} aria-current={active ? "page" : undefined} className={`text-sm font-semibold transition-colors hover:text-brand ${active ? "text-brand" : "text-header"}`}>{item.label}</Link>
+            <Link key={item.key} href={href} aria-current={active ? "page" : undefined} className={`relative text-sm font-semibold transition-colors hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:rounded-full after:bg-grad after:transition-transform after:duration-300 hover:after:scale-x-100 ${active ? "text-white after:scale-x-100" : "text-ink-soft after:scale-x-0"}`}>{item.label}</Link>
           ); })}
-          <Link href={sectionHref(lang, "plans")} className="text-sm font-semibold text-header transition-colors hover:text-brand">{t.plans}</Link>
+          <Link href={sectionHref(lang, "plans")} className="text-sm font-semibold text-ink-soft transition-colors hover:text-white">{t.plans}</Link>
           <Link href={sectionHref(lang, "trial")} className="btn btn-primary !py-2.5">{t.trial}</Link>
         </nav>
         <div className="flex items-center gap-2 lg:hidden">

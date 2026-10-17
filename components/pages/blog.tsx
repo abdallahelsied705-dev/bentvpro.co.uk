@@ -29,7 +29,7 @@ export function BlogIndexPage({ lang }: { lang: Lang }) {
       <JsonLd data={[webPageLd({ lang, path: p, name: t.title, description: t.description, type: "CollectionPage" }), { "@type": "ItemList", itemListElement: posts.map((x, i) => ({ "@type": "ListItem", position: i + 1, url: abs(blogPath(lang, x.slug)), name: x.title })) }]} />
       <Section>
         <SectionHeading as="h1" eyebrow={t.eyebrow} title={t.h1} sub={t.description} />
-        {posts.length === 0 ? <p className="text-center text-ink-soft">{t.empty}</p> : <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{posts.map((x) => (<PostCard key={x.slug} post={x} as="h2" />))}</div>}
+        {posts.length === 0 ? <p className="text-center text-ink-soft">{t.empty}</p> : <div data-stagger className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{posts.map((x) => (<PostCard key={x.slug} post={x} as="h2" />))}</div>}
       </Section>
     </>
   );
@@ -53,7 +53,7 @@ export function BlogPostPage({ lang, slug }: { lang: Lang; slug: string }) {
       <JsonLd data={{ "@type": "Article", "@id": `${url}#article`, headline: post.title, description: post.description, inLanguage: locales[lang].html, datePublished: post.date, dateModified: post.updated ?? post.date, mainEntityOfPage: { "@type": "WebPage", "@id": `${url}#webpage` }, image: [abs(`/og/blog/${lang}/${slug}`)], keywords: post.tags.join(", "), author: { "@id": ORG_ID }, publisher: { "@id": ORG_ID }, isPartOf: { "@id": WEBSITE_ID } }} />
       <div className="mx-auto max-w-6xl px-4 py-14 md:py-20">
         <header className="mx-auto max-w-3xl text-center lg:mx-0 lg:max-w-4xl lg:text-left">
-          {post.tags.length > 0 && (<ul className="mb-5 flex flex-wrap justify-center gap-2 lg:justify-start">{post.tags.map((tag) => (<li key={tag} className="rounded-full bg-background px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-brand">{tag}</li>))}</ul>)}
+          {post.tags.length > 0 && (<ul className="mb-5 flex flex-wrap justify-center gap-2 lg:justify-start">{post.tags.map((tag) => (<li key={tag} className="rounded-full bg-surface2 px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-accent">{tag}</li>))}</ul>)}
           <h1 className="font-display text-3xl font-bold leading-tight text-header md:text-5xl">{post.title}</h1>
           <p className="mt-5 text-lg leading-relaxed text-ink-soft">{post.description}</p>
           <p className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm text-ink-soft lg:justify-start">
@@ -71,7 +71,7 @@ export function BlogPostPage({ lang, slug }: { lang: Lang; slug: string }) {
               <div className="mt-6 flex flex-wrap justify-center gap-3"><Link href={sectionHref(lang, "trial")} className="btn btn-primary">{t.trial}</Link><Link href={sectionHref(lang, "plans")} className="btn btn-ghost">{t.plans}</Link></div>
             </aside>
           </article>
-          {post.toc.length > 1 && (<aside className="hidden lg:block"><nav aria-label={t.toc} className={`${card} sticky top-24 p-5`}><p className="mb-3 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.16em] text-brand"><ListOrdered size={14} aria-hidden="true" /> {t.toc}</p><ol className="space-y-2 text-sm">{post.toc.map((item) => (<li key={item.id}><a href={`#${item.id}`} className="text-ink-soft transition-colors hover:text-header">{item.text}</a></li>))}</ol></nav></aside>)}
+          {post.toc.length > 1 && (<aside className="hidden lg:block"><nav aria-label={t.toc} className={`${card} sticky top-24 p-5`}><p className="mb-3 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.16em] text-accent"><ListOrdered size={14} aria-hidden="true" /> {t.toc}</p><ol className="space-y-2 text-sm">{post.toc.map((item) => (<li key={item.id}><a href={`#${item.id}`} className="text-ink-soft transition-colors hover:text-header">{item.text}</a></li>))}</ol></nav></aside>)}
         </div>
         {related.length > 0 && (<section className="mt-20" aria-labelledby="related-title"><h2 id="related-title" className="mb-6 text-2xl font-extrabold text-header">{t.related}</h2><div className="grid gap-5 md:grid-cols-2">{related.map((x) => (<PostCard key={x.slug} post={x} />))}</div></section>)}
       </div>

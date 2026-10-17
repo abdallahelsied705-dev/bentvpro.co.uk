@@ -6,6 +6,7 @@ import { HowItWorks } from "@/components/how-it-works";
 import { Intro } from "@/components/intro";
 import { JsonLd } from "@/components/json-ld";
 import { LatestPosts } from "@/components/latest-posts";
+import { Marquee } from "@/components/marquee";
 import { PlanMatrix } from "@/components/plan-matrix";
 import { Pricing } from "@/components/pricing";
 import { Showcase } from "@/components/showcase";
@@ -30,15 +31,16 @@ export function HomePage({ lang }: { lang: Lang }) {
     <>
       <JsonLd data={[webPageLd({ lang, path: path(lang, "home"), name: meta[lang].title, description: meta[lang].description }), productLd(lang)]} />
       <Hero lang={lang} />
+      <Marquee lang={lang} />
       <StatsRibbon lang={lang} />
       <Intro lang={lang} />
-      <Pricing lang={lang} />
-      <Showcase lang={lang} />
-      <TrialSection lang={lang} />
-      <PlanMatrix lang={lang} />
-      <VsCable lang={lang} />
-      <HowItWorks lang={lang} />
       <WhyUs lang={lang} />
+      <Pricing lang={lang} />
+      <HowItWorks lang={lang} />
+      <TrialSection lang={lang} />
+      <Showcase lang={lang} />
+      <VsCable lang={lang} />
+      <PlanMatrix lang={lang} />
       <Testimonials lang={lang} />
       <LatestPosts lang={lang} />
       <Faq lang={lang} />
