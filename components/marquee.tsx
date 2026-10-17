@@ -3,9 +3,9 @@ import type { Lang } from "@/lib/i18n";
 
 const items: Record<Lang, { icon: LucideIcon; label: string }[]> = {
   en: [
-    { icon: Tv, label: "Polish live TV" }, { icon: Flame, label: "Fire TV Stick" }, { icon: Trophy, label: "Live sport" },
+    { icon: Tv, label: "UK live TV" }, { icon: Flame, label: "Fire TV Stick" }, { icon: Trophy, label: "Live football" },
     { icon: MonitorSmartphone, label: "Samsung & LG TVs" }, { icon: Clapperboard, label: "Films & series" }, { icon: Tablet, label: "iPhone & iPad" },
-    { icon: Newspaper, label: "News from Poland" }, { icon: Smartphone, label: "Android" }, { icon: Users, label: "Kids & family" }, { icon: Laptop, label: "Windows & Mac" },
+    { icon: Newspaper, label: "24/7 news" }, { icon: Smartphone, label: "Android" }, { icon: Users, label: "Kids & family" }, { icon: Laptop, label: "Windows & Mac" },
   ],
 };
 

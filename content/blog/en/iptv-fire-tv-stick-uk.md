@@ -1,11 +1,11 @@
 ---
-title: "How to set up IPTV Polska on a Fire TV Stick in the UK"
-description: "Step-by-step: install a Polish IPTV player on an Amazon Fire TV Stick bought in the UK, log in, and fix the most common setup problems."
+title: "How to set up IPTV UK on a Fire TV Stick"
+description: "Step-by-step: install an IPTV player on an Amazon Fire TV Stick in the UK, log in, and fix the most common setup problems."
 date: "2026-10-17"
 tags: ["setup", "Fire TV Stick"]
 ---
 
-The Amazon Fire TV Stick is the device most of our UK customers use for Polish TV. It costs less than a takeaway for two in a sale, plugs into any TV with an HDMI port, and turns even an older set into a smart TV. This guide covers the whole setup, from opening the box to watching your first Polish channel.
+The Amazon Fire TV Stick is the device most of our IPTV UK customers watch on. It costs less than a takeaway for two in a sale, plugs into any TV with an HDMI port, and turns even an older set into a smart TV. This guide covers the whole setup, from opening the box to watching your first live channel.
 
 ## Before you start
 
@@ -58,4 +58,4 @@ Go back to **Developer options** and switch **Install unknown apps** off for Dow
 
 ## Still stuck?
 
-Send us a photo of the screen on WhatsApp and we will tell you exactly what to press next, in English or Polish. Setup help is included with every plan. The full [setup guide](/setup-guide) also covers smart TVs, phones, MAG boxes and computers.
+Send us a photo of the screen on WhatsApp and we will tell you exactly what to press next. Setup help is included with every plan. The full [setup guide](/setup-guide) also covers smart TVs, phones, MAG boxes and computers.

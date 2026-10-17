@@ -3,7 +3,7 @@ import { cheapestPerMonthId, gbp, getPlans } from "@/lib/pricing";
 import type { Lang } from "@/lib/i18n";
 import { CONNECTION_OPTIONS, PLAN_DEFS, PLAN_NAMES, PRICES, deviceLabel } from "@/lib/site";
 
-const copy = { en: { eyebrow: "Price table", title: "Every IPTV Polska price on one page", sub: "Pounds sterling, by plan length and number of screens. The longer the plan, the less you pay per month.", plan: "Plan", best: "Best value", onRequest: "on request", mo: "/ month", caption: "IPTV Polska UK prices in GBP by plan length and number of devices" } } as const;
+const copy = { en: { eyebrow: "Price table", title: "Every IPTV UK price on one page", sub: "Pounds sterling, by plan length and number of screens. The longer the plan, the less you pay per month.", plan: "Plan", best: "Best value", onRequest: "on request", mo: "/ month", caption: "IPTV UK prices in GBP by plan length and number of devices" } } as const;
 
 export function PlanMatrix({ lang }: { lang: Lang }) {
   const t = copy[lang]; const bestId = cheapestPerMonthId(1);

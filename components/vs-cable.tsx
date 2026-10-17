@@ -3,13 +3,13 @@ import { Section, SectionHeading, card } from "@/components/ui";
 import type { Lang } from "@/lib/i18n";
 
 const copy = {
-  en: { eyebrow: "IPTV or a satellite dish?", title: "Watching Polish TV in the UK: IPTV compared with satellite", sub: "Until recently, the usual way to get Polish TV in Britain was a dish pointed at a European satellite. Here is how the two compare.", cols: ["", "IPTV Polska", "Satellite dish"], caption: "IPTV Polska compared with a satellite dish for Polish TV in the UK", note: "A general comparison. Costs and rules vary by provider, building and council.", rows: [
-    ["Installation", "None. Install an app and log in.", "A dish, cabling and often an installer visit."],
-    ["Renting", "Nothing on the wall, no landlord permission.", "Landlord or freeholder consent usually needed."],
-    ["Contract", "Pay for 1 to 24 months, no auto-renewal.", "Often a 12 to 24 month subscription."],
-    ["Screens", "Up to 4 at once: TV, phone, tablet, laptop.", "Usually the one TV the decoder is plugged into."],
-    ["Moving house", "Log in at the new address and carry on.", "Take the dish down and re-install it."],
-    ["Weather", "Unaffected by rain or snow.", "Heavy rain can break up the picture."],
+  en: { eyebrow: "IPTV or pay-TV?", title: "IPTV UK compared with satellite and cable TV", sub: "Most UK homes still pay for TV through a satellite or cable package. Here is how IPTV compares.", cols: ["", "IPTV UK", "Satellite and cable"], caption: "IPTV UK compared with satellite and cable TV packages", note: "A general comparison. Prices and terms vary by provider and package.", rows: [
+    ["Price", "From £15 a month, or about £4.58 a month on 24 months.", "Often £30 to £90 a month once sport and films are added."],
+    ["Contract", "Pay for 1 to 24 months, no auto-renewal.", "Usually an 18 to 24 month contract."],
+    ["Installation", "None. Install an app and log in.", "A dish or cable line and an engineer visit."],
+    ["Screens", "Up to 4 at once: TV, phone, tablet, laptop.", "Extra rooms often cost extra each month."],
+    ["Moving house", "Log in at the new address and carry on.", "Transfer fees, new installation or a new contract."],
+    ["Price rises", "Fixed for the plan you buy.", "Mid-contract price rises are common."],
   ] },
 } as const;
 

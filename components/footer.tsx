@@ -5,7 +5,7 @@ import { path, sectionHref, type RouteKey } from "@/lib/routes";
 import { SITE } from "@/lib/site";
 
 const copy = {
-  en: { blurb: "IPTV Polska for UK households: Polish live TV and on-demand programmes over your broadband, priced in pounds, with help in English and Polish.", service: "Explore", info: "Policies", contact: "Get in touch", support: "24/7 support", rights: "All rights reserved.", trial: "Free trial", plans: "Prices", links: [["home", "Home"], ["channels", "What's on"], ["guide", "Setup guide"], ["blog", "Guides"], ["about", "About us"]], legal: [["terms", "Terms of service"], ["refunds", "Refund policy"], ["privacy", "Privacy policy"], ["copyright", "Copyright policy"], ["contact", "Contact"]] },
+  en: { blurb: "IPTV UK for households across Britain: live TV, sport, films and box sets over your broadband, priced in pounds, with no contract.", service: "Explore", info: "Policies", contact: "Get in touch", support: "24/7 support", rights: "All rights reserved.", trial: "Free trial", plans: "Prices", links: [["home", "Home"], ["channels", "What's on"], ["guide", "Setup guide"], ["blog", "Guides"], ["about", "About us"]], legal: [["terms", "Terms of service"], ["refunds", "Refund policy"], ["privacy", "Privacy policy"], ["copyright", "Copyright policy"], ["contact", "Contact"]] },
 } as const;
 
 export function Footer({ lang }: { lang: Lang }) {

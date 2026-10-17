@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Lang } from "@/lib/i18n";
 import { sectionHref } from "@/lib/routes";
 
-const copy = { en: { title: <>Bring Polish TV home,<br /><span className="text-grad">wherever home is now</span></>, text: "Start with a free trial tonight, or choose a plan from £15.", trial: "Start my free trial", plans: "See prices" } } as const;
+const copy = { en: { title: <>Cut the pay-TV bill,<br /><span className="text-grad">keep every channel you love</span></>, text: "Start with a free trial tonight, or choose a plan from £15.", trial: "Start my free trial", plans: "See prices" } } as const;
 
 export function Closing({ lang }: { lang: Lang }) {
   const t = copy[lang];

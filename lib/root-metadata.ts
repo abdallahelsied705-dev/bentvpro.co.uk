@@ -7,7 +7,7 @@ export const rootViewport: Viewport = { width: "device-width", initialScale: 1, 
 export function rootMetadata(lang: Lang): Metadata {
   return {
     metadataBase: new URL(SITE.url),
-    title: { default: `IPTV Polska UK – Polish TV in the UK | ${SITE.name}`, template: `%s | ${SITE.name}` },
+    title: { default: `IPTV UK – Premium IPTV Subscription in the UK | ${SITE.name}`, template: `%s | ${SITE.name}` },
     applicationName: SITE.name, authors: [{ name: SITE.name, url: SITE.url }], creator: SITE.name, publisher: SITE.name,
     formatDetection: { telephone: false, email: false, address: false },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },

@@ -1,6 +1,6 @@
 ---
-title: "What broadband speed do you need for Polish IPTV in the UK?"
-description: "How many Mbps Polish IPTV needs for HD and 4K, how to add up several screens, how to test your UK broadband, and when a cable beats Wi-Fi."
+title: "What broadband speed do you need for IPTV in the UK?"
+description: "How many Mbps IPTV UK needs for HD and 4K, how to add up several screens, how to test your UK broadband, and when a cable beats Wi-Fi."
 date: "2026-10-17"
 tags: ["guide", "broadband"]
 ---
@@ -21,7 +21,7 @@ These figures include some headroom. A stream might use less on average, but it 
 
 Speeds add up. If two people watch HD at the same time, you need about 20 Mbps for TV alone. Then allow for everything else on the connection:
 
-- Video calls to family in Poland: about 3 to 4 Mbps each.
+- Video calls: about 3 to 4 Mbps each.
 - A games console downloading an update: it will take whatever is spare.
 - Phones backing up photos over Wi-Fi.
 

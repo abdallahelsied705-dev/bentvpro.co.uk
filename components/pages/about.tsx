@@ -8,9 +8,9 @@ import { path, ROUTES, sectionHref } from "@/lib/routes";
 import { pageMetadata, webPageLd } from "@/lib/seo";
 
 const copy = {
-  en: { title: "About IPTV UK", description: "IPTV UK streams Polish TV to households across the United Kingdom, with prices in pounds, a free trial and support in English and Polish.", eyebrow: "About us", h1: "About IPTV UK", crumb: "About",
-    lead: "IPTV UK is a new service with one job: making Polish television easy to watch for Polish people living in Britain. Clear prices in pounds, no contract, a free trial and real help when you need it.",
-    blocks: [["Who it is for", "Polish speakers across England, Scotland, Wales and Northern Ireland, and mixed families who want their children to grow up hearing Polish at home."], ["What we offer", "Plans from 1 to 24 months for 1 to 4 screens, a free trial on your own broadband, setup guides for every common UK device and a 7-day refund."], ["How we work", "Orders are checked by a person, not a bot. We answer on WhatsApp and e-mail in English or Polish. We respect intellectual property, and our copyright policy explains how rights holders can reach us."]],
+  en: { title: "About IPTV UK", description: "IPTV UK streams live TV, sport, films and box sets to households across the United Kingdom, with prices in pounds, no contract, a free trial and 24/7 support.", eyebrow: "About us", h1: "About IPTV UK", crumb: "About",
+    lead: "IPTV UK is a new service with one job: giving UK households great TV without the expensive pay-TV contract. Clear prices in pounds, no contract, a free trial and real help when you need it.",
+    blocks: [["Who it is for", "Households across England, Scotland, Wales and Northern Ireland who want live TV and sport on every screen, without a dish, an engineer or an 18-month contract."], ["What we offer", "Plans from 1 to 24 months for 1 to 4 screens, a free trial on your own broadband, setup guides for every common UK device and a 7-day refund."], ["How we work", "Orders are checked by a person, not a bot. We answer on WhatsApp and e-mail, 24/7. We respect intellectual property, and our copyright policy explains how rights holders can reach us."]],
     links: ["Read the setup guide", "See prices", "Copyright policy"] },
 } as const;
 

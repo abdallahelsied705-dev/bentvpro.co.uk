@@ -5,7 +5,7 @@ import type { Lang } from "@/lib/i18n";
 import { path, sectionHref } from "@/lib/routes";
 
 const copy = {
-  en: { eyebrow: "What you can watch", title: "Polish television, films and sport, in one app", text: "Everything arrives through the same player app on the screens you already have. The line-up depends on your plan, so the easiest way to see exactly what is included is a free trial on your own TV.", cta: "Get a free trial", more: "See what's on" },
+  en: { eyebrow: "What you can watch", title: "Live TV, sport, films and box sets, in one app", text: "Everything arrives through the same player app on the screens you already have. The line-up depends on your plan, so the easiest way to see exactly what is included is a free trial on your own TV.", cta: "Get a free trial", more: "See what's on" },
 } as const;
 
 export function Showcase({ lang }: { lang: Lang }) {

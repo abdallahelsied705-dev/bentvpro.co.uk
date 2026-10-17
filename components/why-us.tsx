@@ -1,14 +1,14 @@
-import { Home, Languages, MonitorSmartphone, PoundSterling, ShieldCheck, Wrench, type LucideIcon } from "lucide-react";
+import { Home, Trophy, MonitorSmartphone, PoundSterling, ShieldCheck, Wrench, type LucideIcon } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui";
 import type { Lang } from "@/lib/i18n";
 
-const icons: LucideIcon[] = [Home, Languages, PoundSterling, MonitorSmartphone, Wrench, ShieldCheck];
+const icons: LucideIcon[] = [Home, Trophy, PoundSterling, MonitorSmartphone, Wrench, ShieldCheck];
 /** Bento layout: the first tile spans two columns and the last one the full row. */
 const spans = ["lg:col-span-2", "", "", "", "", "md:col-span-2 lg:col-span-3"];
 const copy = {
-  en: { eyebrow: "Why IPTV UK", title: <>Polish TV that fits <span className="text-grad">a life in Britain</span></>, items: [
-    ["Renter-friendly, nothing on the wall", "No dish to drill, no landlord to ask, no installer to wait in for. Move house and your Polish TV simply comes with you: log in at the new address and carry on."],
-    ["Help in both your languages", "WhatsApp us in Polish or English, whichever is easier for you, your partner or your children."],
+  en: { eyebrow: "Why IPTV UK", title: <>Better TV, <span className="text-grad">without the pay-TV bill</span></>, items: [
+    ["No dish, no engineer, no contract", "Nothing to drill, no engineer to wait in for and no 18-month contract. Move house and your TV simply comes with you: log in at the new address and carry on."],
+    ["Every big match", "Football, F1, boxing, cricket and rugby live, with the TV guide built in, in Full HD and 4K where available."],
     ["Pay in pounds, no contract", "Clear GBP prices from 1 to 24 months. No credit check, no auto-renewal, no exit fee."],
     ["Every screen in the house", "Up to 4 devices at once: the living-room TV, a tablet in the kitchen, a phone on the night bus."],
     ["Set up in minutes", "Guides for Fire TV Stick, Samsung, LG, Android, iPhone, MAG and computers."],

@@ -3,7 +3,7 @@ import { TrialForm } from "@/components/trial-form";
 import { Section } from "@/components/ui";
 import type { Lang } from "@/lib/i18n";
 
-const copy = { en: { eyebrow: "No risk", title: "Try Polish TV free on your own screen", text: "See the picture quality on your broadband, browse what is included and check it works on your TV before you spend a penny.", points: ["Test on your own TV or phone", "No card details needed", "Login sent to your e-mail", "Setup help if you need it"] } } as const;
+const copy = { en: { eyebrow: "No risk", title: "Try IPTV UK free on your own screen", text: "See the picture quality on your broadband, browse what is included and check it works on your TV before you spend a penny.", points: ["Test on your own TV or phone", "No card details needed", "Login sent to your e-mail", "Setup help if you need it"] } } as const;
 
 export function TrialSection({ lang }: { lang: Lang }) {
   const t = copy[lang];

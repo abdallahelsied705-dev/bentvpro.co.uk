@@ -8,7 +8,7 @@ const copy: Record<Lang, { aria: string; stats: Stat[] }> = {
       { value: 4.58, decimals: 2, prefix: "£", label: "a month", sub: "on the 24-month plan" },
       { value: 4, label: "screens at once", sub: "for the whole family" },
       { value: 15, suffix: " min", label: "to set up", sub: "with our device guides" },
-      { value: 24, suffix: "/7", label: "support", sub: "in English or Polish" },
+      { value: 24, suffix: "/7", label: "support", sub: "on WhatsApp and e-mail" },
     ],
   },
 };

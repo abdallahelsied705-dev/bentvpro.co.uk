@@ -26,7 +26,7 @@ export function Logo({ size = 40, onDark = false, className = "" }: { size?: num
       <LogoMark size={size} onDark={onDark} />
       <span className="flex flex-col leading-none">
         <span className="font-display text-[1.4rem] font-extrabold text-white">IPTV <span className="text-grad">UK</span></span>
-        <span className="mt-1 text-[0.58rem] font-bold tracking-[0.32em] text-ink-soft">POLSKA TV</span>
+        <span className="mt-1 text-[0.58rem] font-bold tracking-[0.32em] text-ink-soft">PREMIUM IPTV</span>
       </span>
     </span>
   );

@@ -1,6 +1,6 @@
 ---
 title: "IPTV buffering in a UK home? 9 fixes that work"
-description: "Nine practical fixes for a Polish IPTV picture that freezes, stutters or keeps loading, from router restarts and Wi-Fi to app settings and peak-time congestion."
+description: "Nine practical fixes for an IPTV picture that freezes, stutters or keeps loading, from router restarts and Wi-Fi to app settings and peak-time congestion."
 date: "2026-10-17"
 tags: ["troubleshooting", "guide"]
 ---
@@ -13,7 +13,7 @@ Switch off the TV device, then the router. Wait 30 seconds. Switch the router on
 
 ## 2. Test your speed where you watch
 
-Run a speed test on the device you watch on, in that room, at the time you usually watch. You want at least 10 Mbps per HD screen. If the result is far lower than next to the router, the problem is Wi-Fi coverage, not your broadband. See our [broadband speed guide](/blog/broadband-speed-for-polish-iptv).
+Run a speed test on the device you watch on, in that room, at the time you usually watch. You want at least 10 Mbps per HD screen. If the result is far lower than next to the router, the problem is Wi-Fi coverage, not your broadband. See our [broadband speed guide](/blog/broadband-speed-for-iptv-uk).
 
 ## 3. Get the device closer to the signal
 
@@ -45,4 +45,4 @@ Your router uses your broadband provider's DNS servers by default, and some are 
 
 ## Still buffering?
 
-Message us on WhatsApp with three things: the device you use, a speed test result from that device, and the time it happens. We will look at it with you, in English or Polish. If we cannot get the service working on your device within 7 days of activation, our [refund policy](/refund-policy) applies.
+Message us on WhatsApp with three things: the device you use, a speed test result from that device, and the time it happens. We will look at it with you. If we cannot get the service working on your device within 7 days of activation, our [refund policy](/refund-policy) applies.

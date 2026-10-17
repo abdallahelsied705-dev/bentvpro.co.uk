@@ -21,7 +21,7 @@ import { path, ROUTES } from "@/lib/routes";
 import { pageMetadata, productLd, webPageLd } from "@/lib/seo";
 
 const meta = {
-  en: { title: "IPTV Polska UK – Polish TV in the UK from £15 | IPTV Poland", description: "IPTV Polska for Poles in the UK: Polish live TV, films and sport on Fire TV Stick, smart TV and phone. From £15 a month, 1–4 screens, no contract, free trial." },
+  en: { title: "IPTV UK – Premium IPTV Subscription from £15 a Month", description: "IPTV UK: live TV, sport, films and series in 4K and HD on Fire TV Stick, smart TV and phone. From £15 a month, 1–4 screens, no contract, free trial, 24/7 UK support." },
 } as const;
 
 export const homeMetadata = (lang: Lang): Metadata => pageMetadata({ lang, ...meta[lang], paths: { ...ROUTES.home }, absolute: true });

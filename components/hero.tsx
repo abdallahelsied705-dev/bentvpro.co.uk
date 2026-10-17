@@ -5,23 +5,23 @@ import { sectionHref } from "@/lib/routes";
 
 const copy = {
   en: {
-    badge: "IPTV Polska · for Poles living in the UK",
-    h1a: "IPTV Polska",
-    h1b: "in the UK",
-    lead: "Polish TV on your",
+    badge: "IPTV UK · Live TV, sport & 4K for UK homes",
+    h1a: "IPTV UK",
+    h1b: "without the contract",
+    lead: "Live TV and sport on your",
     words: ["Fire TV Stick", "Samsung TV", "iPhone", "laptop"],
-    sub: "Live Polish channels, films, series and sport over your British broadband. No dish, no installer, no contract. From £15 a month, for 1 to 4 screens.",
+    sub: "Live channels, every big match, films and box sets in 4K and HD over your UK broadband. No dish, no engineer visit, no 18-month contract. From £15 a month, for 1 to 4 screens.",
     primary: "Start my free trial",
     secondary: "See prices in £",
-    bullets: ["No dish or landlord permission", "Pay in pounds, cancel any time", "Help in English and Polish"],
-    tv: "Animated preview: a TV playing Polish live TV with an on-screen programme guide",
+    bullets: ["No dish or engineer visit", "Pay in pounds, no contract", "24/7 UK support"],
+    tv: "Animated preview: a TV playing live TV with an on-screen programme guide",
     live: "LIVE", now: "Now playing", guide: "TV guide",
     rows: [
-      { icon: Tv, t: "Polish live TV", s: "News · Entertainment" },
-      { icon: Trophy, t: "Live sport", s: "Football · Volleyball" },
-      { icon: Clapperboard, t: "Films & series", s: "On demand" },
-      { icon: Users, t: "Kids & family", s: "Cartoons in Polish" },
-      { icon: Newspaper, t: "News from Poland", s: "Around the clock" },
+      { icon: Trophy, t: "Live football", s: "Every weekend fixture" },
+      { icon: Tv, t: "UK live TV", s: "Entertainment · Drama" },
+      { icon: Clapperboard, t: "Films & box sets", s: "On demand" },
+      { icon: Newspaper, t: "24/7 news", s: "UK & world" },
+      { icon: Users, t: "Kids & family", s: "Cartoons · Learning" },
     ],
     chips: ["4K & Full HD", "TV guide (EPG)", "1–4 screens"],
   },
@@ -78,7 +78,7 @@ export function Hero({ lang }: { lang: Lang }) {
                       <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z" /></svg>
                     </div>
                     <p className="mt-6 text-[0.65rem] font-bold uppercase tracking-widest text-white/60">{t.now}</p>
-                    <p className="font-display text-lg font-bold">Polska TV · HD</p>
+                    <p className="font-display text-lg font-bold">Live sport · 4K</p>
                     <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/15"><div className="progress-fill h-full rounded-full bg-accent" /></div>
                   </div>
                   {/* Guide */}

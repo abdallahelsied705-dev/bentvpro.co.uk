@@ -14,7 +14,7 @@ export function GET() {
   const posts = getAllPosts("en").map((p) => `- [${p.title}](${u}${blogPath("en", p.slug)}): ${p.description}`);
   const body = `# ${SITE.name}
 
-> ${SITE.name} (${new URL(u).hostname}) is an IPTV Polska service for Polish speakers living in the United Kingdom: Polish-language live TV and on-demand programmes streamed over UK broadband. Plans run from 1 to 24 months for 1 to 4 devices, priced in pounds sterling, from ${gbp("en", LOWEST_MONTHLY)} for one month (about ${gbp("en", LOWEST_PER_MONTH)} a month on the 24-month plan). No contract or automatic renewal. A free trial is available and support is offered 24/7 in English and Polish. The website is in British English.
+> ${SITE.name} (${new URL(u).hostname}) is an IPTV UK service for households in the United Kingdom: live TV, live sport, films and box sets in 4K and HD, streamed over UK broadband. Plans run from 1 to 24 months for 1 to 4 devices, priced in pounds sterling, from ${gbp("en", LOWEST_MONTHLY)} for one month (about ${gbp("en", LOWEST_PER_MONTH)} a month on the 24-month plan). No contract or automatic renewal. A free trial is available and support is offered 24/7. The website is in British English.
 
 ## Key facts
 
@@ -25,11 +25,11 @@ ${priceLines.join("\n")}
 - Login details are usually sent within 5 minutes to 6 hours after payment.
 - Refund: available before activation, and within 7 days if the service does not work on your device and support cannot fix it.
 - Broadband guide: about 10 Mbps per screen for HD, about 25 Mbps for 4K.
-- Content availability depends on plan. Rights holders: see the copyright policy.
+- Content: live UK and international channels, live sport (football, F1, boxing, cricket, rugby), films, box sets, kids and 24-hour news; availability depends on plan. Rights holders: see the copyright policy.
 
 ## Pages
 
-- [Home: IPTV Polska UK](${u}/)
+- [Home: IPTV UK](${u}/)
 - [Setup guide](${u}${ROUTES.guide.en}), [What's on](${u}${ROUTES.channels.en}), [Guides](${u}${ROUTES.blog.en}), [About](${u}${ROUTES.about.en}), [Contact](${u}${ROUTES.contact.en})
 - [Terms](${u}${ROUTES.terms.en}), [Refund policy](${u}${ROUTES.refunds.en}), [Privacy policy](${u}${ROUTES.privacy.en}), [Copyright policy](${u}${ROUTES.copyright.en})
 

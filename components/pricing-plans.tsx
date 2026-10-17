@@ -11,8 +11,8 @@ const copy = {
     helper: "Not sure which plan?", show: "Show me this plan", devices: "Screens watching at the same time", tablist: "Number of devices in the plan",
     best: "Lowest monthly cost", rec: "Suggested for you", order: "Order on WhatsApp", ask: "Ask for a price", onRequest: "Price on request",
     prepare: "We will put a price together for you", monthly: "Pay month by month", perMonth: "/ month", aDay: "about", perDay: "a day",
-    msg: (plan: string, dev: string, price: string) => `Hi! I would like to order ${SITE.name} Polish IPTV: ${plan}, ${dev} (${price}).`,
-    msgAsk: (plan: string, dev: string) => `Hi! Could I have a price for ${SITE.name} Polish IPTV: ${plan}, ${dev}?`,
+    msg: (plan: string, dev: string, price: string) => `Hi! I would like to order ${SITE.name}: ${plan}, ${dev} (${price}).`,
+    msgAsk: (plan: string, dev: string) => `Hi! Could I have a price for ${SITE.name}: ${plan}, ${dev}?`,
     helperCards: [
       { title: "I want to try a month", c: 1, p: "1-month", text: (a: string) => `One screen for a month at ${a}. No commitment after that.` },
       { title: "It's just me", c: 1, p: "1-year", text: (a: string, b: string) => `A full year on one screen for ${a}, which works out at ${b} a month.` },

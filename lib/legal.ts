@@ -8,10 +8,10 @@ const UPDATED = "2026-10-17";
 /** DRAFTS. Reasonable starting points written for UK customers, not legal advice. Have a solicitor review them and set COMPANY in lib/site.ts before launch. */
 export const LEGAL: Record<LegalKey, Record<Lang, LegalDoc>> = {
   terms: {
-    en: { title: "Terms of service", description: "The terms for using the IPTV UK website and Polish IPTV service: ordering, the free trial, fair use, availability and liability.", updated: UPDATED,
+    en: { title: "Terms of service", description: "The terms for using the IPTV UK website and IPTV service: ordering, the free trial, fair use, availability and liability.", updated: UPDATED,
       intro: "These terms apply when you use this website or the IPTV UK service. Placing an order, or using a trial or subscription, means you accept them. Please read them alongside our refund and privacy policies.",
       sections: [
-        { h: "1. What these words mean", ul: ["“Service”: access to internet television (IPTV) with Polish-language content, through compatible apps and devices.", "“You”: the person who orders, trials or uses the service.", "“Plan”: the period you pay for and the number of devices that may watch at the same time."] },
+        { h: "1. What these words mean", ul: ["“Service”: access to internet television (IPTV), through compatible apps and devices.", "“You”: the person who orders, trials or uses the service.", "“Plan”: the period you pay for and the number of devices that may watch at the same time."] },
         { h: "2. Ordering and paying", p: ["You can order by WhatsApp or e-mail, or by paying through PayPal, which also accepts Visa and Mastercard. All prices are in pounds sterling (GBP). Orders are checked by a person, and your login details are sent by e-mail, normally between 5 minutes and 6 hours after payment."] },
         { h: "3. Free trial", p: ["You can ask for a free trial to check the service on your own device and internet connection. We may limit trials to one per household to prevent misuse."] },
         { h: "4. Your login details", p: ["Keep your login details private. Each plan allows a set number of devices to watch at the same time; going over that limit may lead us to suspend the account."] },
@@ -24,7 +24,7 @@ export const LEGAL: Record<LegalKey, Record<Lang, LegalDoc>> = {
       ] },
   },
   refunds: {
-    en: { title: "Refund and cancellation policy", description: "When IPTV UK refunds a Polish IPTV plan: before activation, within 7 days if it does not work on your device, and how to ask.", updated: UPDATED,
+    en: { title: "Refund and cancellation policy", description: "When IPTV UK refunds an IPTV plan: before activation, within 7 days if it does not work on your device, and how to ask.", updated: UPDATED,
       intro: "You should only pay for something that works in your home. That is why you can try the service free first, and why we offer a 7-day refund if it does not work on your device.",
       sections: [
         { h: "1. Before activation", p: ["If we have not sent your login details yet, or you have not used them, you can cancel and get a full refund."] },

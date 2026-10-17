@@ -36,10 +36,10 @@ export const organizationLd = {
   logo: { "@type": "ImageObject", url: abs("/images/logo-mark.svg"), width: 512, height: 512 },
   email: SITE.email,
   areaServed: { "@type": "Country", name: "United Kingdom" },
-  contactPoint: [{ "@type": "ContactPoint", contactType: "customer support", email: SITE.email, telephone: `+${SITE.whatsappNumber}`, availableLanguage: ["English", "Polish"], areaServed: "GB" }],
+  contactPoint: [{ "@type": "ContactPoint", contactType: "customer support", email: SITE.email, telephone: `+${SITE.whatsappNumber}`, availableLanguage: ["English"], areaServed: "GB" }],
 };
 
-export const websiteLd = { "@type": "WebSite", "@id": WEBSITE_ID, url: abs("/"), name: SITE.name, alternateName: ["IPTV Polska UK", "IPTV Poland UK"], inLanguage: "en-GB", publisher: { "@id": ORG_ID } };
+export const websiteLd = { "@type": "WebSite", "@id": WEBSITE_ID, url: abs("/"), name: SITE.name, alternateName: ["IPTV UK subscription", "bentvpro.co.uk"], inLanguage: "en-GB", publisher: { "@id": ORG_ID } };
 
 export function breadcrumbLd(items: { name: string; path: string }[]) {
   return { "@type": "BreadcrumbList", itemListElement: items.map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, item: abs(item.path) })) };
@@ -52,8 +52,8 @@ export function webPageLd(opts: { lang: Lang; path: string; name: string; descri
 export function productLd(lang: Lang) {
   return {
     "@type": "Product", "@id": `${SITE.url}/#product`,
-    name: "IPTV Polska UK subscription",
-    description: "Polish internet television (IPTV Polska) for households in the United Kingdom: live Polish TV and an on-demand library on smart TVs, Fire TV Stick, phones, tablets and computers. Plans from 1 to 24 months, for 1 to 4 devices, priced in pounds.",
+    name: "IPTV UK subscription",
+    description: "IPTV UK subscription for households in the United Kingdom: live TV, live sport and a large film and series library on smart TVs, Fire TV Stick, phones, tablets and computers. Plans from 1 to 24 months, for 1 to 4 devices, priced in pounds.",
     brand: { "@id": ORG_ID }, inLanguage: locales[lang].html,
     offers: {
       "@type": "AggregateOffer", priceCurrency: CURRENCY,

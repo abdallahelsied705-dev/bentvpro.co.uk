@@ -13,7 +13,7 @@ import { ORG_ID, WEBSITE_ID, abs, pageMetadata, webPageLd } from "@/lib/seo";
 import { SITE } from "@/lib/site";
 
 const copy = {
-  en: { title: "Polish IPTV guides for UK viewers", description: "Practical guides to watching Polish TV in the UK: IPTV Polska explained, Fire TV Stick setup, broadband speeds, buffering fixes and Polish TV for children.", eyebrow: "Guides", h1: "Polish IPTV guides for UK viewers", empty: "The first guides are coming soon.", crumb: "Guides", toc: "On this page", related: "Keep reading", minRead: "min read", updated: "Updated", ctaTitle: "Want to see it on your own TV?", ctaText: "Request a free trial, or pick a plan from £15 for your household.", trial: "Free trial", plans: "See prices" },
+  en: { title: "IPTV UK guides and answers", description: "Practical IPTV UK guides: how IPTV works in the UK, Fire TV Stick setup, broadband speeds, fixing buffering and how IPTV compares with satellite and cable.", eyebrow: "Guides", h1: "IPTV UK guides and answers", empty: "The first guides are coming soon.", crumb: "Guides", toc: "On this page", related: "Keep reading", minRead: "min read", updated: "Updated", ctaTitle: "Want to see it on your own TV?", ctaText: "Request a free trial, or pick a plan from £15 for your household.", trial: "Free trial", plans: "See prices" },
 } as const;
 
 export const blogIndexMetadata = (lang: Lang): Metadata => {

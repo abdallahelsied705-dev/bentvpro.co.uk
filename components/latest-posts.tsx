@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/blog";
 import type { Lang } from "@/lib/i18n";
 import { path } from "@/lib/routes";
 
-const copy = { en: { eyebrow: "Guides", title: "Polish IPTV guides for UK viewers", sub: "Practical help with setup, broadband and getting the best picture.", all: "All guides" } } as const;
+const copy = { en: { eyebrow: "Guides", title: "IPTV UK guides", sub: "Practical help with setup, broadband and getting the best picture.", all: "All guides" } } as const;
 
 export function LatestPosts({ lang }: { lang: Lang }) {
   const posts = getAllPosts(lang).slice(0, 3);

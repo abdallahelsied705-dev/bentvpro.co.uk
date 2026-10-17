@@ -11,5 +11,5 @@ export function generateStaticParams() {
 export async function GET(_req: Request, ctx: { params: Promise<{ lang: string; slug: string }> }) {
   const { slug } = await ctx.params;
   const post = getPost("en", slug);
-  return renderOg({ kicker: "Polish IPTV guide", title: post?.title ?? "IPTV Polska UK", footer: "IPTV UK · Polish TV in Britain" });
+  return renderOg({ kicker: "IPTV UK guide", title: post?.title ?? "IPTV UK", footer: "IPTV UK · bentvpro.co.uk" });
 }

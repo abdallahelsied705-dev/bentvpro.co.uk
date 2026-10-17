@@ -1,4 +1,4 @@
-/** Single-language site: British English, written for Polish viewers living in the UK. */
+/** Single-language site: British English, written for viewers across the UK. */
 export type Lang = "en";
 export const LANGS: Lang[] = ["en"];
 export const DEFAULT_LANG: Lang = "en";

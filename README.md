@@ -1,9 +1,9 @@
 # IPTV UK (bentvpro.co.uk)
 
-English-only (en-GB) Next.js 16 site selling **IPTV Polska** to Polish speakers living in the UK.
-Brand shown on the site: **IPTV UK**. Focus keywords: "IPTV Polska", "IPTV Poland", "Polish IPTV UK".
-Built from the ~/iptvpoland template (Polish half removed, all copy rewritten for the UK market,
-new red/navy palette and logo).
+English-only (en-GB) Next.js 16 IPTV site for the general UK market.
+Brand shown on the site: **IPTV UK**. Focus keyword: **"IPTV UK"**.
+Built from the ~/iptvpoland template (Polish half removed, all copy rewritten for the UK market),
+then redesigned: dark animated theme, own logo and home layout (see components/motion.tsx).
 
 ## Run
     npm install

@@ -3,7 +3,7 @@ import { Section, SectionHeading } from "@/components/ui";
 import type { Lang } from "@/lib/i18n";
 
 const icons: LucideIcon[] = [MousePointerClick, Wallet, Inbox, PlayCircle];
-const copy = { en: { eyebrow: "How it works", title: "Watching Polish TV tonight, in four steps", steps: [
+const copy = { en: { eyebrow: "How it works", title: "Watching IPTV UK tonight, in four steps", steps: [
   ["Pick a plan", "Choose how long (1 to 24 months) and how many screens should watch at once."],
   ["Order", "Pay through PayPal or by card, or simply send us a WhatsApp message."],
   ["Check your inbox", "Once the payment is confirmed, your login details arrive by e-mail."],

@@ -1,7 +1,7 @@
 import type { Lang } from "@/lib/i18n";
 import { whatsappLink } from "@/lib/site";
 
-const copy = { en: { label: "Chat with us on WhatsApp", msg: "Hi! I have a question about Polish IPTV in the UK." } } as const;
+const copy = { en: { label: "Chat with us on WhatsApp", msg: "Hi! I have a question about IPTV UK." } } as const;
 
 export function WhatsAppFloat({ lang }: { lang: Lang }) {
   const t = copy[lang];
