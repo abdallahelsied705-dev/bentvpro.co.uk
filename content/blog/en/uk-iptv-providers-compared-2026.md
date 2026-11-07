@@ -60,7 +60,7 @@ If a provider's homepage and refund page disagree, ask them which one applies **
 | GB IPTV | PayPal, Visa, Mastercard |
 | Televo IPTV | Card, PayPal, crypto |
 | IPTV Kingdom | Bank transfer, card, crypto |
-| IPTV United Kingdom | details sent on WhatsApp when you order |
+| IPTV United Kingdom | Visa, Mastercard, bank transfer, crypto |
 
 Card and PayPal give you a way to dispute a payment. Bank transfers and crypto usually do not.
 
