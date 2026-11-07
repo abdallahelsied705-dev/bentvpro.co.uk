@@ -3,7 +3,7 @@ import type { Lang } from "@/lib/i18n";
 export const SITE = {
   name: "IPTV UK",
   /** Must equal the host your hosting actually serves. */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bentvpro.co.uk",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bentvpro.co.uk",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "supportteamiptv@gmail.com",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "212710141872",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "+212 710 141 872",

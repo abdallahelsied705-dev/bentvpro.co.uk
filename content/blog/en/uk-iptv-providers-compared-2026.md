@@ -1,11 +1,11 @@
 ---
-title: "UK IPTV providers compared (2026): prices, trials and refunds checked"
-description: "IPTV Kingdom, BritCast, GB IPTV, Televo IPTV and IPTV United Kingdom compared on 12-month price, channels, free trial and refund terms, read from each provider's own site on 7 November 2026."
+title: "UK IPTV providers compared 2026: prices, trials, refunds"
+description: "IPTV Kingdom, BritCast, GB IPTV, Televo IPTV and IPTV United Kingdom compared on yearly price, free trial and refunds, from their own sites (7 Nov 2026)."
 date: "2026-11-07"
 tags: ["comparison", "prices"]
 ---
 
-> **Who wrote this:** this site and [IPTV United Kingdom](https://iptvunitedkingdom.co/best-iptv-uk) are run by the same team, so treat what we say about it as the seller talking. Everything about the other providers is copied from their own websites on 7 November 2026, with no ratings or stars.
+> **Who wrote this:** this site and [IPTV United Kingdom](https://iptvunitedkingdom.co/iptv-united-kingdom) are run by the same team, so treat what we say about it as the seller talking. Everything about the other providers is copied from their own websites on 7 November 2026, with no ratings or stars.
 
 Most "best IPTV UK" lists are written by someone who sells one of the services on the list and does not tell you. We would rather show our working. Below are the providers that came up on the first page of Google UK for annual IPTV plans, and what each one actually publishes about price, trial and refunds.
 
@@ -69,7 +69,7 @@ Card and PayPal give you a way to dispute a payment. Bank transfers and crypto u
 - **You want the longest test before paying:** Televo IPTV (72 hours).
 - **You want to pay by PayPal:** BritCast, GB IPTV or Televo IPTV.
 - **You need two screens on a ready-made plan:** GB IPTV lists 12 months with 2 connections for £98.
-- **You want £49 a year with a 7-day refund and a trial that does not cancel it:** BritCast or [IPTV United Kingdom's 12-month plan](https://iptvunitedkingdom.co/best-iptv-uk/iptv-subscription-12-months-uk).
+- **You want £49 a year with a 7-day refund and a trial that does not cancel it:** [IPTV United Kingdom's 12-month plan](https://iptvunitedkingdom.co/best-iptv-uk/iptv-subscription-12-months-uk). BritCast also lists £49 with a 7-day refund, but its plans pages do not say how to get a trial.
 
 ## Full side-by-side pages
 
